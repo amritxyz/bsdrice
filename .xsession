@@ -7,4 +7,4 @@ xset s noblank &
 xset r rate 300 50 &
 xcompmgr &
 slstatus &
-exec twm
+exec dwm
