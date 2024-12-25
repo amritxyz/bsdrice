@@ -47,7 +47,7 @@ alias h='cd $HOME/ && ls -a'
 alias cf='cd $HOME/.config && ls -a'
 alias wal='cd $HOME/.local/share/void-wall && ls -a'
 alias mu='cd $HOME/.local/music && ls -a'
-alias dl='cd $HOME/.local/dl && ls -a'
+alias dl='cd $HOME/Downloads && ls -a'
 alias dox='cd $HOME/.local/dox && ls -a'
 alias dev='cd $HOME/.local/dev && ls -a'
 alias pra='cd $HOME/.local/practice && ls -a'
@@ -74,6 +74,7 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias mkdir='mkdir -p'
+alias sudo='doas'
 
 # Git aliases
 alias g="git"
