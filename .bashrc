@@ -6,18 +6,6 @@
 
 export DISPLAY=:0
 
-complete -r  # Remove all completions
-
-# Dirs
-export XDG_DESKTOP_DIR="$HOME/"
-export XDG_TEMPLATES_DIR="$HOME/"
-export XDG_DOCUMENTS_DIR="$HOME/.local/dox"
-export XDG_DOWNLOAD_DIR="$HOME/.local/dl"
-export XDG_MUSIC_DIR="$HOME/.local/music"
-export XDG_PICTURES_DIR="$HOME/.local/img"
-export XDG_PUBLICSHARE_DIR="$HOME/.local/pub"
-export XDG_VIDEOS_DIR="$HOME/.local/vids"
-
 # Default programs
 export EDITOR="nvim"
 export TERMINAL="st"
@@ -32,12 +20,7 @@ export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 
 # Prompt configuration
 PS1="[\u@\h \W]\$ "
-# Only set `PROMPT_COMMAND` if necessary
 export PROMPT_COMMAND="history -a; history -n"
-
-# LS_COLORS configuration
-export LS_COLORS='di=1;34:fi=0:ln=0;36:ex=0;32:'
-# eval "$(dircolors -b)"
 
 # Shell options and settings
 shopt -s autocd
