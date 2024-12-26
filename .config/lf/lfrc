@@ -90,3 +90,4 @@ map gi cd ~/.local/img
 map gm cd ~/.local/music
 map gv cd ~/.local/vids
 map gs cd ~/.local/share/
+map gs cd ~/.local/share/void-wall
