@@ -4,6 +4,7 @@
 
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
 TMUX_CONFIG=$HOME/.tmux.conf
+WGETRC=$HOME/.config/wget/wgetrc
 ENV=.kshrc
 TERM=screen-256color-bce
-export PATH HOME TERM ENV TMUX_CONFIG TERM
+export PATH HOME TERM ENV TMUX_CONFIG TERM WGETRC
