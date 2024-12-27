@@ -20,7 +20,7 @@ cmd mkfile ${{
 
 cmd open &{{
 	case $(file --mime-type -Lb $f) in
-		text/*) lf -remote "send $id \$nvim \$fx";;
+		text/*exec/*) lf -remote "send $id \$nvim \$fx";;
 		image/*) nsxiv "$f";;
 		audio/*|video/*|application/ogg) mpv --force-window "$f";;
 		application/pdf|image/vnd.djvu|application/x-cbr|application/x-cbz|application/x-comic|application/x-comic+zip) zathura "$f";;
@@ -58,9 +58,6 @@ map c
 map d
 map m
 
-map co $nvim "$f"
-map cf $dotbare fadd -f
-
 map zi extract
 map ae $wine "$f"
 
@@ -74,7 +71,7 @@ map de $trashy empty --all
 map p paste
 map x cut
 map y copy
-map <enter> open
+map <enter> $nvim "$f"
 map R reload
 map mf mkfile
 map md mkdir
@@ -90,4 +87,3 @@ map gi cd ~/.local/img
 map gm cd ~/.local/music
 map gv cd ~/.local/vids
 map gs cd ~/.local/share/
-map gs cd ~/.local/share/void-wall
