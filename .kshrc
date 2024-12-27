@@ -5,8 +5,10 @@
 PS1="[\u@\h \W]\$ "
 export PATH="$PATH:$HOME/.local/bin"
 #aliases
-alias l='ls -l'
-alias ll='ls -lF'
+alias l='ls -lF'
+alias ls='ls -F'
+alias la='ls -AF'
+alias ll='ls -lAF'
 alias rr='cd ~/.local/src/bsd-dwm && ls -lF'
 set -o vi
 alias c='clear'
@@ -18,6 +20,7 @@ alias torrent='transmission-cli'
 alias rr='cd $HOME/.local/src/bsd-dwm && ls -AF'
 alias h='cd $HOME/ && ls -AF'
 alias cf='cd $HOME/.config && ls -AF'
+alias cf='cd $HOME/.local/bin && ls -AF'
 alias wal='cd $HOME/.local/share/void-wall && ls -AF'
 alias mu='cd $HOME/.local/music && ls -AF'
 alias dl='cd $HOME/Downloads && ls -AF'
