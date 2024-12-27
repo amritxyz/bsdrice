@@ -8,6 +8,4 @@ if [ "$1" = "inc" ]; then
 elif [ "$1" = "dec" ]; then
     new_brightness=$((current_brightness - 5))
         wsconsctl display.brightness=$new_brightness
-else
-    echo "Usage: backlight {inc|dec}"
 fi
