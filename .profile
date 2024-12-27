@@ -7,4 +7,5 @@ TMUX_CONFIG=$HOME/.tmux.conf
 WGETRC=$HOME/.config/wget/wgetrc
 ENV=.kshrc
 TERM=screen-256color-bce
-export PATH HOME TERM ENV TMUX_CONFIG TERM WGETRC
+PYTHONSTARTUP=$HOME/.config/python/pythonrc
+export PATH HOME TERM ENV TMUX_CONFIG TERM WGETRC PYTHONSTARTUP
