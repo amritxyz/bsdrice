@@ -59,7 +59,6 @@ map d
 map m
 
 map zi extract
-map ae $wine "$f"
 
 # Basic Functions
 map . set hidden!
