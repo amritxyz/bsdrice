@@ -1,16 +1,6 @@
 #!/bin/sh
-
-# This script will clean temporary files, package caches, logs, etc., on an OpenBSD system.
-
 echo "Starting OpenBSD cleanup..."
-
-# 6. Remove unnecessary files (manually specified)
 echo "Removing unnecessary files..."
 rm -rf /home/void/.cache/*
 rm -rf /home/void/.local/state/*
-
 echo "Cleanup completed!"
-
-# Optional: Reboot or prompt the user for a reboot
-#echo "Rebooting system..."
-#reboot
