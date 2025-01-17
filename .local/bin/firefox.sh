@@ -13,7 +13,7 @@ pdir="$browserdir/$profile"
 # Ensure profile directory exists
 if [ -d "$pdir" ]; then
 	# Custom user.js
-	custom_userjs="/home/$USER/.local/share/user.js"
+	custom_userjs="/home/$USER/.local/share/arkenfox.js"
     # Check if custom user.js exists
     if [ -f "$custom_userjs" ]; then
 	    # Install the custom user.js to the Firefox profile

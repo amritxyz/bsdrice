@@ -1,5 +1,4 @@
 #!/bin/sh
-
 current_brightness=$(wsconsctl display.brightness | sed 's/[^0-9]*\([0-9]*\).*/\1/')
 
 if [ "$1" = "inc" ]; then
