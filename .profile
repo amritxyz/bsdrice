@@ -5,7 +5,7 @@
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/local/jdk-21/bin
 TMUX_CONFIG=$HOME/.tmux.conf
 WGETRC=$HOME/.config/wget/wgetrc
-ENV=.kshrc
+ENV=$HOME/.kshrc
 TERM=screen-256color-bce
 PYTHONSTARTUP=$HOME/.config/python/pythonrc
 export PATH HOME TERM ENV TMUX_CONFIG TERM WGETRC PYTHONSTARTUP

@@ -92,5 +92,5 @@ map gs cd ~/.local/share
 map gr cd ~/.local/git-repos
 map gw cd ~/.local/share/void-wall
 map gp cd ~/.local/practice
-map gl cd ~/.local/dl
+map gl cd ~/Downloads
 map gx cd ~/.local/dox
