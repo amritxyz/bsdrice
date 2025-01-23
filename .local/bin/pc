@@ -4,6 +4,7 @@ rm -rf $HOME/.cache/*
 rm -rf $HOME/.local/state/nvim
 rm -rf $HOME/.local/share/xorg/*.*
 rm -rf $HOME/.local/share/xorg/*.old
+rm -rf $HOME/.config/GIMP/*
 
 # Define the Firefox profile path
 PROFILE_DIR=~/.mozilla/firefox/
