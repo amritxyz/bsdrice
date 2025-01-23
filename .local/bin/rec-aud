@@ -1,6 +1,6 @@
 #!/bin/sh
 # Target directory
-TARGET_DIR="$HOME/.local/vids"
+TARGET_DIR="$HOME/.local/audio"
 
 # Check if the directory exists
 if [ ! -d "$TARGET_DIR" ]; then
@@ -8,7 +8,7 @@ if [ ! -d "$TARGET_DIR" ]; then
 fi
 
 # Find the highest number used in existing filenames
-MAX_NUMBER=$(ls -1 "$TARGET_DIR"/*_vid.mkv 2>/dev/null | \
+MAX_NUMBER=$(ls -1 "$TARGET_DIR"/*_aud.mp3 2>/dev/null | \
 	awk -F'[_]' '{print $1}' | \
 	awk -F/ '{print $NF}' | \
 	sort -n | \
@@ -23,13 +23,11 @@ fi
 NEXT_NUMBER=$((MAX_NUMBER + 1))
 
 # Filename format
-FILENAME="$TARGET_DIR/${NEXT_NUMBER}_vid.mkv"
+FILENAME="$TARGET_DIR/${NEXT_NUMBER}_aud.mp3"
 
 # -draw_mouse 0 \
 # -f sndio -thread_queue_size 4096 -i snd/1 \
 
 ffmpeg -f sndio -thread_queue_size 4096 -i snd/0 \
-	-f x11grab -thread_queue_size 4096 -s 1366x768 -r 30 -i :0 \
-	-c:v libx264rgb -crf 0 -b:v 10000k -preset ultrafast \
-	-c:a flac -b:a 160k -ar 48000 \
+	-c:a mp3 -b:a 160k -ar 48000 \
 	"$FILENAME"
