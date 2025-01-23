@@ -1,37 +1,10 @@
 #!/bin/sh
-# Target directory
+#
 # YouTube stream key
 echo "Stream Key: "
 read stream_key
 
-# Check if microphone is enabled
-# MIC_INPUT="-f alsa -i hw:0,0 -af 'afftdn=nf=-75'"
-# if [ "$enable_mic" = "y" ] || [ "$enable_mic" = "Y" ] || [ -z "$enable_mic" ]; then
-# 	MIC_INPUT="-f sndio -thread_queue_size 4096 -i snd/0 -c:a mp3 -b:a 160k -ar 48000" # Default internal microphone device
-# else
-# 	MIC_INPUT=""  # No microphone input
-# fi
-
-# Take the screenshot and stream with the selected options
-# sleep 2
-# ffmpeg -f x11grab -video_size 1366x768 -i :0.0 $MIC_INPUT \
-# 	-c:v libx264 -preset veryfast \
-# 	-c:a aac -ar 44100 -b:a 128k -g 50 -f flv \
-# 	rtmp://a.rtmp.youtube.com/live2/$stream_key
-
-# Software encoding stream script
-
-# YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2"
-# STREAM_KEY=$( cat $HOME/Documents/.streamkey )
-
-# ffmpeg -f sndio -thread_queue_size 4096 -i snd/0 \
-# 	-filter_complex amix=inputs=2:duration=first:dropout_transition=2 \
-# 	-y -f x11grab -framerate 30 -thread_queue_size 8000 -s 1366x768 -i :0 \
-# 	-c:v libx264rgb -crf 0 -b:v 10000k -preset ultrafast \
-# 	-c:a aac -b:a 128k -ar 44100 \
-# 	-f flv \
-# 	rtmp://a.rtmp.youtube.com/live2/$stream_key
-
+sleep 2
 ffmpeg -f sndio -thread_queue_size 4096 -i snd/0 \
 	-f x11grab -thread_queue_size 4096 -s 1366x768 -r 30 -i :0 \
 	-c:v libx264rgb -crf 0 -b:v 10000k -preset ultrafast \
