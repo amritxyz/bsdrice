@@ -57,6 +57,7 @@ cmd extract ${{
 map c
 map d
 map m
+map a
 
 map zi extract
 map aa $xwallpaper --stretch "$f"
