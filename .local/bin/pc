@@ -10,8 +10,8 @@ rm -rf $HOME/.config/GIMP/*
 PROFILE_DIR=~/.mozilla/firefox/
 
 # Find the profile that ends with either '.default' or '.default-default'
-PROFILE_NAME=$(ls $PROFILE_DIR | grep -E '\.default-default')
-PROFILE_NAME_DEFAULT=$(ls $PROFILE_DIR | grep -E '\.default' | head -n 1)
+PROFILE_NAME=$(ls -AF $PROFILE_DIR | grep -E '\.default-default')
+PROFILE_NAME_DEFAULT=$(ls -AF $PROFILE_DIR | grep -E '\.default/')
 
 # ls .mozilla/firefox/ | grep -E '\.default/'
 
