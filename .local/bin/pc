@@ -13,8 +13,6 @@ PROFILE_DIR=~/.mozilla/firefox/
 PROFILE_NAME=$(ls -AF $PROFILE_DIR | grep -E '\.default-default')
 PROFILE_NAME_DEFAULT=$(ls -AF $PROFILE_DIR | grep -E '\.default/')
 
-# ls .mozilla/firefox/ | grep -E '\.default/'
-
 # Check if a valid profile is found
 if [ -z "$PROFILE_NAME" ]; then
   echo "No profile matching '.default' or '.default-default' found."
