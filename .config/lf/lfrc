@@ -76,7 +76,7 @@ map <enter> $nvim "$f"
 map R reload
 map mf mkfile
 map md mkdir
-map ex $chmod +x "$f"
+map me $chmod +x "$f"
 map <esc> clear
 
 # Movement
