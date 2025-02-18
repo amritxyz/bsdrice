@@ -1,2 +1,2 @@
-join "S4M" wpakey "Samundra@0"
+join "wifi_name" wpakey "password"
 inet autoconf
