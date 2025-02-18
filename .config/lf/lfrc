@@ -20,7 +20,7 @@ cmd mkfile ${{
 
 cmd open &{{
 	case $(file --mime-type -Lb $f) in
-		text/*exec/*) lf -remote "send $id \$nvim \$fx";;
+		text/*) lf -remote "send $id \$nvim \$fx";;
 		image/*) nsxiv "$f";;
 		audio/*|video/*|application/ogg) ffplay -autoexit "$f";;
 		application/pdf|image/vnd.djvu|application/x-cbr|application/x-cbz|application/x-comic|application/x-comic+zip) zathura "$f";;
@@ -33,7 +33,7 @@ cmd extract ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
 	set -f
 	printf "%s\n\t" "$fx"
-	printf "extract?[y/N]"
+	printf "extract? [y/N] "
 	read ans
 	[ $ans = "y" ] && {
 		case $fx in
