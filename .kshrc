@@ -13,7 +13,6 @@ alias rr='cd ~/.local/src/bsd-dwm && ls -lF'
 set -o vi
 alias c='clear'
 alias tmux='tmux -T RGB -u'
-alias matrix='cmatrix -C  yellow -u 7'
 alias t='tmux -T RGB -u'
 alias ta='tmux -T RGB -u a'
 alias e='exit'
