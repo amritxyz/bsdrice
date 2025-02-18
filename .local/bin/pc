@@ -28,20 +28,26 @@ fi
 rm -rf $PROFILE_DIR/$PROFILE_NAME/bookmarkbackups/*
 rm -rf $PROFILE_DIR/$PROFILE_NAME/bookmarkbackups/*.json
 rm -rf $PROFILE_DIR/$PROFILE_NAME/bookmarkbackups/*.jsonlz4
-rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite-shm
-rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite-wal
-rm -rf $PROFILE_DIR/$PROFILE_NAME/storage/default/http*
+# Cookies
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite-shm
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/cookies.sqlite-wal
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/storage/default/http*
+# Crash_Reports
 rm -rf $PROFILE_DIR/$PROFILE_NAME/minidumps/*.dmp
+# Dom
 rm -rf $PROFILE_DIR/$PROFILE_NAME/webappsstore.sqlite
+# Form_History
 rm -rf $PROFILE_DIR/$PROFILE_NAME/formhistory.dat
 rm -rf $PROFILE_DIR/$PROFILE_NAME/formhistory.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME/signons.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME/signons2.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME/signons3.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME/signons.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME/logins.json
+# Passwords
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/signons.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/signons2.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/signons3.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/signons.sqlite
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/logins.json
+# Session_Restore
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionCheckpoints.json
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore*.js*
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore.bak*
@@ -50,7 +56,9 @@ rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore-backups/recovery.js*
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore-backups/recovery.bak*
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore-backups/previous.bak
 rm -rf $PROFILE_DIR/$PROFILE_NAME/sessionstore-backups/upgrade.js*-20*
+# Site_Preference
 rm -rf $PROFILE_DIR/$PROFILE_NAME/content-prefs.sqlite
+# Url_History
 rm -rf $PROFILE_DIR/$PROFILE_NAME/SiteSecurityServiceState.txt
 rm -rf $PROFILE_DIR/$PROFILE_NAME/history.dat
 rm -rf $PROFILE_DIR/$PROFILE_NAME/downloads.rdf
@@ -58,24 +66,31 @@ rm -rf $PROFILE_DIR/$PROFILE_NAME/downloads.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME/places.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME/favicons.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME/AlternateServices.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME/*.sqlite
+# Vacuum
+# rm -rf $PROFILE_DIR/$PROFILE_NAME/*.sqlite
 
 # DEFAULT
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/bookmarkbackups/*
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite-shm
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite-wal
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/storage/default/http*
+# Cookies
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite-shm
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/cookies.sqlite-wal
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/storage/default/http*
+# Crash_Reports
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/minidumps/*.dmp
+# Dom
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/webappsstore.sqlite
+# Form_History
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/formhistory.dat
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/formhistory.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons2.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons3.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons.sqlite
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/logins.json
+# Passwords
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons2.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons3.txt
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/signons.sqlite
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/logins.json
+# Session_Restore
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionCheckpoints.json
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore*.js*
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore.bak*
@@ -84,7 +99,9 @@ rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore-backups/recovery.js*
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore-backups/recovery.bak*
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore-backups/previous.bak
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/sessionstore-backups/upgrade.js*-20*
+# Site_Preference
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/content-prefs.sqlite
+# Url_History
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/SiteSecurityServiceState.txt
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/history.dat
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/downloads.rdf
@@ -92,4 +109,5 @@ rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/downloads.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/places.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/favicons.sqlite
 rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/AlternateServices.txt
-rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/*.sqlite
+# Vacuum
+# rm -rf $PROFILE_DIR/$PROFILE_NAME_DEFAULT/*.sqlite
