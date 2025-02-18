@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Name=RSS feed addition
-Exec=/usr/local/bin/rssadd %U
+Exec=/usr/local/bin/deluge-gtk %U

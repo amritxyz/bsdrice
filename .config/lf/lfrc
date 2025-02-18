@@ -22,7 +22,7 @@ cmd open &{{
 	case $(file --mime-type -Lb $f) in
 		text/*exec/*) lf -remote "send $id \$nvim \$fx";;
 		image/*) nsxiv "$f";;
-		audio/*|video/*|application/ogg) mpv --force-window "$f";;
+		audio/*|video/*|application/ogg) ffplay -autoexit "$f";;
 		application/pdf|image/vnd.djvu|application/x-cbr|application/x-cbz|application/x-comic|application/x-comic+zip) zathura "$f";;
 		application/vnd.oasis.opendocument.*|application/vnd.ms-office|application/vnd.openxmlformats-officedocument.*|application/vnd.sun.xml.*) libreoffice "$f";;
 		*) xdg-open "$f"
@@ -74,6 +74,7 @@ map x cut
 map y copy
 map e $nvim "$f"
 map <enter> $nvim "$f"
+map o $ffplay -autoexit "$f"
 map R reload
 map mf mkfile
 map md mkdir
