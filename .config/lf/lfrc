@@ -72,6 +72,7 @@ map de $trashy empty --all
 map p paste
 map x cut
 map y copy
+map e $nvim "$f"
 map <enter> $nvim "$f"
 map R reload
 map mf mkfile
