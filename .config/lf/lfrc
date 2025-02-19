@@ -60,7 +60,7 @@ map m
 map a
 
 map zi extract
-map aa $xwallpaper --stretch "$f"
+map a $xwallpaper --stretch "$f"
 
 # Basic Functions
 map . set hidden!
@@ -71,7 +71,7 @@ map dr $trashy restore
 map de $trashy empty --all
 map p paste
 map x cut
-map X $$f
+map A $$f
 map y copy
 map e $nvim "$f"
 map <enter> $nvim "$f"
