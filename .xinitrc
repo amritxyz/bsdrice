@@ -1,5 +1,6 @@
 #!/bin/sh
 setxkbmap -option caps:swapescape &
+xset b off &
 xset s off &
 xset -dpms &
 xset s noblank &
